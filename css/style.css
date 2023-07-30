@@ -1,0 +1,619 @@
+/* css/style.css */
+
+/* Reset some default styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a suitable font for the entire document */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: #333;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Additional styling for the navigation bar */
+.navbar {
+  background-color: orangered !important; /* Make the navbar transparent */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; /* Set a high z-index to bring the navbar to the front */
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Set the color of the brand text to white */
+}
+
+/* Style the logo image */
+.navbar-brand img {
+  width: 100px; /* Set the width of the logo image */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  color: #333; /* Set the color of the navigation links to white */
+}
+
+/* Style the social media icons */
+.navbar-nav .nav-item .nav-link i {
+  font-size: 24px;
+  margin-right: 10px; /* Add some spacing between the icon and text */
+  color: #333; /* Set the color of the social media icons to white */
+}
+
+/* Hover styles for navigation links and social icons */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item .nav-link i:hover {
+  color: #fff; /* Change the color on hover to a gold color */
+}
+
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('../images/hero/hero-1.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333; /* Text color for the content on top of the image */
+  text-align: center;
+  flex-direction: column;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #333; /* Set the background color of the button to a gold color */
+  color: #fff; /* Set the text color of the button to dark gray */
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: orangered; /* Change the background color of the button on hover */
+  color: #333; /* Change the text color of the button on hover */
+}
+
+.services {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+  
+.services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+  
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+  
+.service-card {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    text-align: center;
+    width: 350px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the cards horizontally */
+    transition: background-color 0.3s ease-in-out; /* Add transition effect */
+}
+
+.service-card:hover {
+    background-color: #333; /* Change the background color on hover */
+    color: #f9f9f9; /* Change the text color on hover */
+}
+  
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.service-card p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.projects {
+    padding: 10px 0;
+  }
+  
+  .projects .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .projects h2 {
+    color: #f9f9f9;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .project-card {
+    position: relative;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover img {
+    transform: scale(1.1);
+    opacity: 0.4; /* Reduce the opacity on hover to make the image dim */
+  }
+  
+  .project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Display the content in a column */
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #333;
+    text-align: center;
+  }
+  
+  .project-overlay h3,
+  .project-overlay p {
+    margin: 10px 0; /* Add some margin between the elements */
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+  }
+  
+  .project-card:hover .project-overlay {
+    opacity: 1;
+  }
+  
+  #testimonial {
+    background-color: #333;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #testimonial h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f9f9f9;
+  }
+  
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .testimonial-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .testimonial-content p {
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-author img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .testimonial-author h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .testimonial-author p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+/* Style for the contact section */
+.contact-section {
+    position: relative;
+    height: 400px; /* Adjust the height as needed */
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Style for the background image */
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Add background image styling here */
+    background-image: url('../images/projects/2.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; /* Adjust the opacity to make the image dimmer */
+  }
+  
+  /* Style for the overlay to make the image dimmer */
+  .background-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Black overlay color */
+    opacity: 0.5; /* Adjust the opacity to make it dimmer */
+  }
+  
+  /* Style for the contact content */
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .contact-content h2 {
+    font-size: 54px; /* Increase the font size */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .contact-content p {
+    font-size: 24px; /* Increase the font size */
+    margin-bottom: 30px;
+  }
+  
+  /* ... (previous CSS rules) ... */
+
+/* Style for social media icons */
+.social-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icon {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 5px;
+    /* Add transition for smooth hover effect */
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover styles for social media icons */
+  .social-icon:hover {
+    color: orangered; /* Change the color on hover to orangered */
+  }
+  
+  .footer {
+    padding: 30px 0;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-row {
+    flex: 0 0 calc(25% - 20px);
+    margin-bottom: 20px;
+  }
+  
+  .footer h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .footer p {
+    font-size: 16px;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer li {
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons a i {
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s ease; /* Add transition effect for the hover */
+  }
+  
+  .social-icons a i:hover {
+    color: orangered; /* Change the icon color on hover */
+  }
+  
+  .contact-info li i {
+    margin-right: 10px;
+  }
+  
+  .contact-info li {
+    font-size: 14px;
+  }
+  
+  /* Footer Copyright */
+  .footer .copyright {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .footer .copyright p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query for Smaller Screens */
+@media (max-width: 767px) {
+    .hero-content {
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .hero-content h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .hero-content p {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .cta-button {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+        padding: 8px 20px; /* Adjust the padding for smaller screens */
+    }
+    
+    .service-section .col-md-4 {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+ 
+    .service-section {
+      padding: 20px 0; /* Adjust padding for smaller screens */
+    }
+  
+    .service-grid-item h2 {
+      font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  
+    .service-grid-item p {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .service-grid {
+      grid-template-columns: repeat(1, 1fr); /* Change to a single column layout for smaller screens */
+      grid-gap: 10px; /* Reduce the gap between grid items for smaller screens */
+    }
+  
+    .service-card {
+      width: 100%; /* Adjust the width to take the full width of the container for smaller screens */
+    }
+  
+    .service-card h3 {
+      font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  
+    .service-card p {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .projects {
+      padding: 20px 0; /* Adjust padding for smaller screens */
+    }
+  
+    .project-grid {
+      grid-template-columns: repeat(1, 1fr); /* Display one project card per row on smaller screens */
+    }
+
+    .testimonial-grid {
+      grid-template-columns: repeat(1, 1fr); /* Display one testimonial card per row on smaller screens */
+      grid-gap: 10px; /* Reduce the gap between testimonial cards for smaller screens */
+    }
+  
+    .testimonial-card {
+      width: 100%; /* Adjust the width to take the full width of the container for smaller screens */
+    }
+    
+    .testimonial-author img {
+      width: 60px; /* Adjust the size of the testimonial author image for smaller screens */
+      height: 60px;
+    }
+    
+    .testimonial-author h3 {
+      font-size: 16px; /* Adjust font size for smaller screens */
+      margin: 5px 0;
+    }
+    
+    .testimonial-author p {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      margin: 0;
+    }
+    .contact-content h2 {
+        font-size: 24px; /* Increase the font size */
+      }
+      
+      .contact-content p {
+        font-size: 16px; /* Increase the font size */
+      }
+
+      .footer-row {
+        flex: 0 0 100%;
+      }
+  }
+  

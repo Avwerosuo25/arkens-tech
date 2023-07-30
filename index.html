@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arkens Tech</title>
+  <!-- Add Bootstrap 5.3.1 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
+  <!-- Add Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Add custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <!-- Logo as an image -->
+      <a class="navbar-brand" href="#">
+        <img src="images/logo/logo-1.png" alt="">
+      </a>
+
+      <!-- Hamburger menu button for mobile view -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- Navigation items -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <!-- Testimonial link 
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>-->
+          <!-- Social media icons -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+        <h1>ARKENS TECH</h1>
+        <p>Creating Websites that Captivate and Convert Leads</p>
+        <a href="#" class="cta-button">Discover Our Services</a>
+        </div>
+    </header>
+
+    <!-- Service Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="container">
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Web Development</h3>
+                    <p>We specialize in creating custom, responsive websites tailored to your unique business needs. From static websites to dynamic web applications, our experienced team ensures a seamless online experience for your users.</p>
+                </div>
+                <div class="service-card">
+                    <h3>SEO Optimization</h3>
+                    <p>Expand your online reach and boost your business growth with our online marketing solutions. From search engine optimization (SEO) to pay-per-click (PPC) advertising, we drive targeted traffic to your website and maximize your online visibility.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Tutor & Mentor</h3>
+                    <p>We offer personalized tutoring and mentoring services in various subjects and technologies, helping you achieve your learning goals and stay ahead in your field.</p>
+                </div>
+                <!-- Add more service cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Our Previous Works</h2>
+        <div class="container">
+          <div class="project-grid">
+            <div class="project-card">
+              <img src="images/projects/project-0.jpg" alt="" onclick="openModal(this)">
+              <div class="project-overlay">
+                <h3>The BettyMay Foundation</h3>
+                <p>PH, Nigeria.</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="images/projects/project-2.jpg" alt="" onclick="openModal(this)">
+              <div class="project-overlay">
+                <h3>BigDrewAutos</h3>
+                <p>PH, Nigeria.</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="images/projects/project-1.jpg" alt="" onclick="openModal(this)">
+              <div class="project-overlay">
+                <h3>Jeuels Store</h3>
+                <p>Lekki, Lagos.</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="images/projects//project-5.jpg" alt="" onclick="openModal(this)">
+              <div class="project-overlay">
+                <h3>LaLa Collections</h3>
+                <p>London, UK.</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="images/projects/project-3.jpg" alt="" onclick="openModal(this)">
+              <div class="project-overlay">
+                <h3>Hot 'n' Spicy</h3>
+                <p>London, UK.</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="images/projects/project-4.jpg" alt="" onclick="openModal(this)">
+              <div class="project-overlay">
+                <h3>Yoma Fab Design</h3>
+                <p>PH, Nigeria</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonial" id="testimonial">
+        <h2>Testimonials</h2>
+        <div class="container">
+          <div class="testimonial-grid">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>"Impressed by the professionalism and creativity! Our website now stands out, and we've seen a significant increase in traffic and conversions. Highly recommended!"</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="images/testimonials/review-1.jpeg" alt="Client 1">
+                <h3>Dr. Izzi</h3>
+                <p>Founder & Director, BettyMay Foundation</p>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>"Absolutely thrilled with our new website! The team at Arkens Tech understood our needs perfectly and delivered a stunning site that boosted our online presence."</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="images/testimonials/review-2.jpeg" alt="Client 2">
+                <h3>Uwa</h3>
+                <p>Owner, LaLa Collection</p>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>"Arkens Tech exceeded our expectations! They created a user-friendly website that perfectly represents our brand. The results have been outstanding for our business."</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="images/reviews/image-4.jpg" alt="Client 3">
+                <h3>Andrew I. N.</h3>
+                <p>CEO, BigDrewAutos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="background-image">
+          <!-- Add your background image here -->
+          <!-- Example: <img src="path/to/your-image.jpg" alt="Background Image"> -->
+        </div>
+        <div class="contact-content">
+          <h2>Put your business on the web today!</h2>
+          <p>Contact Us.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-icon"><i class="fas fa-phone-alt"></i></a>
+            <a href="#" class="social-icon"><i class="far fa-envelope"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-row">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-row">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-row">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+              <li><i class="fas fa-map-marker-alt"></i> 11 Worlu Estate, Rukpokwu, PH, Nigeria</li>
+              <li><i class="fas fa-phone-alt"></i> +234 (0) 8149238835</li>
+              <li><i class="fas fa-envelope"></i> arkenstech@gmail.com</li>
+              <li><i class="fab fa-whatsapp"></i> +234 (0) 8149238835</li>
+            </ul>
+          </div>
+
+          <div class="footer-row">
+            <h3>Arkens Tech</h3>
+            <p>We specialize in crafting SEO-friendly websites that captivate and convert. Our focus is on delivering exceptional results, empowering clients with an impressive online presence.</p>
+          </div>
+        </div>
+      
+        <!-- Copyright -->
+        <div class="copyright">
+          <div class="container">
+            <p>&copy; 2023 Arkens Tech. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      
+      
+
+  <!-- Add Bootstrap 5.3.1 JS and jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+  <!-- Add the script.js file at the end of the body section -->
+  <script src="js/script.js"></script>
+
+
+
+</body>
+</html>
