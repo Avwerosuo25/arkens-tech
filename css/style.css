@@ -177,6 +177,30 @@ body {
     grid-gap: 20px;
   }
   
+  .project-card a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+    display: inline-block; /* Allows for padding and margin */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .project-card a:hover {
+    color: #3498db; /* Change to desired color on hover */
+  }
+  
+  .project-card a h3 {
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Add padding for clickable area */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: white; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .project-card a h3:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken on hover */
+  }
+  
+
   .project-card {
     position: relative;
   }
